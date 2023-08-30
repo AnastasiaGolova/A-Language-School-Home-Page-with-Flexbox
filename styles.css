@@ -1,0 +1,350 @@
+/* Universal Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.image-container {
+    overflow: hidden;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Navigation and logo */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.0625rem solid #efcb63;
+    position: sticky;
+    z-index: 1;
+    top: 0px;
+    background-color: #FFF5E0;
+    /* opacity: 0.98; */
+    
+}
+
+header li {
+    display: inline-block;
+    /* padding: 1rem; */
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    padding-right: 2rem;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: #370701;
+    transition: color 0.2s ease-in-out 0s;
+}
+
+header a:hover {
+    color: #d8760f;
+}
+
+header a:active {
+    color: #370701;
+}
+
+.logo {
+    max-width: 4rem;
+    max-height: 4rem;
+}
+
+.group-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 2rem;
+    width: 18rem;
+}
+
+.group-logo span {
+    font-family: Pacifico;
+    font-size: 2.5rem;
+    color: #8E0F08;
+}
+
+.list {
+    display: none;
+}
+
+/* Main section general */
+main h1 {
+    color: #FFF5E0;
+    font-size: 2rem;
+}
+
+/* Main section 1: Banner */
+.banner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(images/background-beautiful-view-plaza-de-espana-seville-spain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 46rem;
+}
+
+.container-banner {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.banner h1, .banner p {
+    color: #FFF5E0;
+    padding-left: 3rem;
+    margin: 1rem auto;
+    
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+}
+
+.container-banner span {
+    font-family: Pacifico;
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+.banner p {
+    font-size: 1.25rem;
+}
+
+.button-primary {
+    margin: 2rem 3rem;
+    padding: 1rem;
+    font-size: 1.125rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    background-color: #f7c75e;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.button-primary a {
+    text-decoration: none;
+    color:#370701;
+    transition: color 0.2s ease-in-out 0s;
+}
+
+.button-primary:hover {
+    background-color: #FFF5E0;
+}
+
+.button-primary a:hover {
+    color:#d8760f;
+}
+
+.button-primary a:active {
+    color:#370701
+}
+
+.button-primary:active {
+    background-color:#ebddbe ;
+}
+
+/* Main Section 2: Learning options */
+
+#learning-options {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+#learning-options h3, p {
+    color: #370701;
+}
+
+#learning-options h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.3125rem;
+    transition: color 0.2s ease-in-out 0s;
+}
+
+#learning-options h1, #teachers h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.option-container {
+    background-color:#FFF5E0;
+    padding: 1rem;
+    margin: 1rem;
+    max-width: 26rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out 0s;
+    
+}
+
+.option-container img {
+    max-height: 16rem;
+}
+
+.option-container:hover {
+    box-shadow: 0.75rem 0.75rem #f7c75e;
+    top: 0.5rem;
+    left: 0.5rem;
+}
+
+#learning-options h3:hover {
+    color:#d8760f;
+}
+
+/* Main section 3: our teachers */
+
+#teachers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem 0 3rem;
+    
+}
+
+.teacher-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    max-width: 22rem;
+    background-color:#FFF5E0;
+    border-radius: 0.2rem;
+}
+
+.image-container-2 {
+    height: 26rem;
+    display: flex;
+    justify-content: center;
+    align-items:center;  
+    border-radius: 0.2rem;
+}
+
+.teacher-name {
+    position: relative;
+    top: -12%;
+    color: #FFF5E0;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    transition: color 0.3s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.teacher-name:hover {
+    color:#d8760f;
+    background-color: #FFF5E0;
+    opacity: 0.7;
+}
+
+.teacher-container p {
+    padding: 0 2rem;
+    margin: 0;
+    position: relative;
+    top: -6%;
+}
+
+/* Footer */
+
+footer {
+    background-color: #FFF5E0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+footer p {
+    margin: 0.5rem;
+}
+
+.social-media {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1rem;
+}
+
+.social-media img {
+    max-width: 3rem;
+    margin: 0 1.5rem 1rem 1rem;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1020px) and (min-width: 883px) {
+    #home {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 884px) and (min-width: 361px) {
+    .nav-bar li {
+        display: none;
+    }
+    .list {
+        display: block;
+        margin: 0.65rem 1rem;
+    }
+    .social-media img {
+        max-width: 2rem;
+        margin: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .nav-bar li {
+        display: none;
+}
+    .group-logo span {
+        font-size: 2rem;
+    }
+    .banner h1 {
+        font-size: 2rem;
+        padding-left: 1.5rem;
+    }
+    .banner p {
+        font-size: 1rem;
+        padding: 0 1.5rem;
+    }
+    .banner span {
+        font-size: 2.5rem;
+    }
+    section h1 {
+        font-size: 1.5rem;
+    }
+    .social-media img {
+        max-width: 1.5rem;
+        margin: 1rem;
+        
+    }
+    .social-media {
+        justify-content: center;
+        margin: 0;
+    }
+    .teacher-name {
+        top: -18%;
+    }
+    .button-primary {
+        margin: 3rem 4.2rem;
+    }
+}
